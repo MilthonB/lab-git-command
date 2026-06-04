@@ -10,10 +10,11 @@ hora_formateada = hora_actual.strftime("%H:%M:%S")
 # Mostrar mensaje
 print(f"\n¡Hola {nombre}! 👋")
 print(f"Son las {hora_formateada} en Mexico 🇲🇽")
-print(f"Son las {hora_formateada} en Mexico 🇲🇽")
-print(f"Son las {hora_formateada} en Mexico 🇲🇽")
-print(f"Son las {hora_formateada} en Mexico 🇲🇽")
-print(f"Son las {hora_formateada} en Mexico 🇲🇽")
+
+
+print(
+    f"Este cambio deberia de estar en la rama nueva y no en la main, qe se llama rama2"
+)
 
 # Preguntar qué quiere hacer
 respuesta = input("\n¿Quieres saber la fecha actual? (s/n): ")

@@ -1,0 +1,33 @@
+name: Pipele de CI Comisiones Test
+
+
+on: 
+  push: 
+    branches: [main]
+  pull_request:
+    branches: [main]
+
+
+
+jobs:
+
+  pruebas:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar codigo fuente
+        uses: actions/checkout@v4
+
+      - name: configurar python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+
+      - name: instalar dependencias
+        run: |
+          python -m pip install --upgrade pip
+          pip install pytest
+
+      - name: correr pruebas unitarias
+        run: |
+          pytest
