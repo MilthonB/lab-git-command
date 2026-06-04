@@ -10,7 +10,6 @@ hora_formateada = hora_actual.strftime("%H:%M:%S")
 # Mostrar mensaje
 print(f"\n¡Hola {nombre}! 👋")
 print(f"Son las {hora_formateada} en Mexico 🇲🇽")
-print(f"Son las {hora_formateada} en Mexico 🇲🇽")
 
 
 print(
